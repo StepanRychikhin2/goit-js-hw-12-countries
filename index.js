@@ -5,7 +5,7 @@ btn.addEventListener("click", findLock)
 
 function findLock() {
   URLL =  `https://restcountries.com/v3.1/name/${input.value}` 
-  console.log(input.value)
+  return URLL;
 }
 
 const listkountri = document.querySelector(".kountri")
