@@ -8,8 +8,8 @@ function findLock() {
   let myURL = `https://restcountries.com/v3.1/name/${cou8ntruName}`;
   console.log(myURL);
   fetch(myURL)
-    .then((data) => data.json())
-    .then((data) => {
+.then((data) => data.json())
+.then((data) => {
       const listMarkUp = data.map((data) => {
         console.log(data);
         const listElem = `
@@ -41,5 +41,14 @@ function findLock() {
         return listElem;
       });
       listkountri.innerHTML = listMarkUp;
+      })
+      .catch(() => {
+        if (cou8ntruName == 0) {
+          alert("Введіть коктне значеня")
+        } else {
+          alert("Введіть коктне значеня 22")
+        }
+     
     });
+   
 }
