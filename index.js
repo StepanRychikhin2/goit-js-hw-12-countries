@@ -13,6 +13,7 @@ function findLock() {
       const listMarkUp = data.map((data) => {
         console.log(data);
         const listElem = `
+        <li class="bb">
   <div class="conteiner2">
    <img src="${data.flags.svg}" class="flagImg">
         <h2>${data.name.common}</h2>
@@ -37,6 +38,7 @@ function findLock() {
             </div>
         </div>
   </div>
+  </li>
       `;
         return listElem;
       });
