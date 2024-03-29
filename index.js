@@ -12,10 +12,11 @@ function findLock() {
     .then((data) => {
 
       const listMarkUp = data.map((data) => {
-      if (true) {
+     
         
           console.log(data);
-          
+          arr.push(data.name.common);
+          console.log(arr);
           const listElem = `
       <li class="bb">
 <div class="conteiner2">
@@ -46,14 +47,6 @@ function findLock() {
     `;
           return listElem;
        
-       
-      } else if (true) {
-        arr.push(data.name.common);
-        console.log(arr);
-      } else {
-        console.log(arr);
-      }
-
     });
     listkountri.innerHTML = listMarkUp;
     })
