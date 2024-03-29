@@ -10,8 +10,9 @@ function findLock() {
   fetch(myURL)
     .then((data) => data.json())
     .then((data) => {
+
       const listMarkUp = data.map((data) => {
-      if (arr.length == 1) {
+      if (true) {
         
           console.log(data);
           
@@ -46,7 +47,7 @@ function findLock() {
           return listElem;
        
        
-      } else if (arr.length == 0) {
+      } else if (true) {
         arr.push(data.name.common);
         console.log(arr);
       } else {
